@@ -1,0 +1,64 @@
+\documentclass[a4paper,12pt]{book}
+\usepackage{parskip}
+\usepackage[utf8]{inputenc}
+\usepackage[sfdefault]{atkinson}
+\usepackage[]{xcolor}
+\definecolor{E}{RGB}{128, 32, 0}
+\definecolor{O}{RGB}{0, 0, 255}
+\definecolor{M}{RGB}{0, 128, 0}
+\usepackage[super]{nth}
+\usepackage{fancyhdr}
+\renewcommand{\chaptername}{Section}
+\usepackage[titletoc]{appendix}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue, filecolor=magenta, urlcolor=cyan,}
+\urlstyle{same}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{array}
+\graphicspath{ {./images/} }
+
+\begin{document}
+
+\author{TeXstudio Team}
+\title{Simple Book Example}
+\date{January 2013}
+
+\frontmatter
+\maketitle
+\tableofcontents
+\include{./chapters/intro}
+\include{./chapters/preface}
+
+\mainmatter
+\setcounter{chapter}{-1}
+\include{./chapters/s0}
+\include{./chapters/s1}
+\include{./chapters/s2}
+\include{./chapters/s3}
+\include{./chapters/s3_1}
+\include{./chapters/s4}
+\include{./chapters/s5}
+\include{./chapters/s6}
+\include{./chapters/s7}
+\include{./chapters/s8}
+\include{./chapters/s9}
+\include{./chapters/s10}
+
+\include{./chapters/bib}
+\include{./chapters/links}
+
+\begin{appendices}
+	\renewcommand{\thechapter}{\arabic{chapter}}
+	\setcounter{chapter}{0}
+	\include{./chapters/a1}
+	\include{./chapters/a2}...
+\end{appendices}
+
+
+\end{document}

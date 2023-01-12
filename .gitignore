@@ -2,4 +2,7 @@
 *.log
 *.out
 *.pdf
+*.gz
+*.toc
+
 

@@ -28,12 +28,45 @@
 
 \hyphenation{Environment Operation Metasystem}
 
+\usepackage{titling}
+\newcommand{\subtitle}[1]{%
+    \posttitle{%
+        \par\end{center}
+    \begin{center}\Large#1\end{center}
+}%
+}
+
+\newcommand{\subsubtitle}[1]{%
+\preauthor{%
+    \begin{center}
+        \large #1 \vskip0.5em
+        \begin{tabular}[t]{c}
+        }%
+    }
+\pretitle{%
+    \begin{center}
+        \Huge
+    }
+\posttitle{
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.5\linewidth]{images/vsm_4t_160x187}
+    \end{figure}
+\end{center}
+}
+
 \begin{document}
     \raggedbottom
 
-\author{TeXstudio Team}
-\title{Simple Book Example}
-\date{January 2013}
+\author{Jon Walker}
+\title{The VSM Guide}
+%\subtitle{How to design a healthy business: The use of the Viable System Model in the diagnosis and design of organisational structures in co-operatives and other social economy enterprises}
+
+\subsubtitle{An introduction to the\\
+    {\Large \textbf{Viable System Model}}\\
+    as a diagnostic \& design tool\\
+    for co-operatives \& federations}
+\date{Version 3.2 (2020)}
 
 \frontmatter
 \maketitle

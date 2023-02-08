@@ -36,6 +36,10 @@
 \end{longtable}
 #+END_SRC latex
 
+** figure raisebox
+#+BEGIN_SRC latex
+\raisebox{\normalbaselineskip-\height}{\includegraphics[width=\linewidth]{}}
+#+END_SRC latex
 * Color
 #+BEGIN_SRC latex
 \textcolor{O}{\textbf{Operation}}

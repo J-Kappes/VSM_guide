@@ -1,0 +1,47 @@
+#+title: Snippets
+* Wrap
+#+BEGIN_SRC latex
+\begin{wrapfigure}[15]{l}{0.45\textwidth}
+    \begin{center}
+        \includegraphics[max width=\textwidth]{}
+    \end{center}
+\end{wrapfigure}
+#+END_SRC latex
+
+* Two columns
+** Floatrow
+#+BEGIN_SRC latex
+\begin{figure}[H]
+\begin{floatrow}
+    \floatbox{figure}[.42\textwidth][\FBheight][t]{}{
+    \includegraphics[max width=0.42\textwidth]{}
+}
+    \floatbox{table}[0.5\textwidth][\FBheight][t]{}{
+    \begin{tabular}{}
+    \end{tabular}
+}
+\end{floatrow}
+\end{figure}
+#+END_SRC latex
+
+** longtable with minipages
+#+BEGIN_SRC latex
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.50}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.50}}@{}}
+\endhead
+\includegraphics[width=\linewidth]{pm5sys_.png}
+& \begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} \\
+\end{longtable}
+#+END_SRC latex
+
+* Color
+#+BEGIN_SRC latex
+\textcolor{O}{\textbf{Operation}}
+\textcolor{M}{\textbf{Metasystem}}
+\textcolor{E}{\textbf{Environment}}
+\textcolor{E}{\textbf{E}}
+\textcolor{O}{\textbf{O}}
+\textcolor{M}{\textbf{M}}
+#+END_SRC latex

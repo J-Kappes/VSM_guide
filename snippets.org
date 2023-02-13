@@ -40,6 +40,18 @@
 #+BEGIN_SRC latex
 \raisebox{\normalbaselineskip-\height}{\includegraphics[width=\linewidth]{}}
 #+END_SRC latex
+* Table
+** Framed, 2 Columns
+#+BEGIN_SRC latex
+\begin{table}[H]
+\centering
+\begin{tabular}{|L{0.12375\textwidth} | L{0.81\textwidth}|}
+    \hline
+    System 2 & \textbf{Conflict resolution, stability}. \\
+    \hline
+\end{tabular}
+\end{table}
+#+END_SRC latex
 * Color
 #+BEGIN_SRC latex
 \textcolor{O}{\textbf{Operation}}
@@ -48,4 +60,9 @@
 \textcolor{E}{\textbf{E}}
 \textcolor{O}{\textbf{O}}
 \textcolor{M}{\textbf{M}}
+#+END_SRC latex
+* Reference to Section
+
+#+BEGIN_SRC latex
+\hyperref[LABEL]{TEXT}
 #+END_SRC latex
